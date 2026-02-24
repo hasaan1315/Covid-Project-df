@@ -1,0 +1,9 @@
+{
+	"name": "covidcases-report-adf",
+	"location": "southeastasia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "67bacc39-1397-471a-8484-a8b0747a47cc",
+		"tenantId": "de5c478e-64a6-4764-a90b-8eef6e1c4405"
+	}
+}
