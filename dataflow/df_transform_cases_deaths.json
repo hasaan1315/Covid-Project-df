@@ -115,7 +115,8 @@
 				"     preCommands: [],",
 				"     postCommands: [],",
 				"     skipDuplicateMapInputs: true,",
-				"     skipDuplicateMapOutputs: true) ~> CasesAndDeathsSink"
+				"     skipDuplicateMapOutputs: true,",
+				"     partitionBy('roundRobin', 2)) ~> CasesAndDeathsSink"
 			]
 		}
 	}
