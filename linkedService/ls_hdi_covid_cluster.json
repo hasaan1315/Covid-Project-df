@@ -1,0 +1,29 @@
+{
+	"name": "ls_hdi_covid_cluster",
+	"properties": {
+		"annotations": [],
+		"type": "HDInsightOnDemand",
+		"typeProperties": {
+			"clusterType": "hadoop",
+			"clusterSize": 2,
+			"clusterNamePrefix": "",
+			"timeToLive": "00:15:00",
+			"version": "4.0",
+			"hostSubscriptionId": "d8f009e5-60d4-48a6-bd53-725af01be7a2",
+			"clusterResourceGroup": "covid-resources-rg",
+			"linkedServiceName": {
+				"referenceName": "ls_ablob_covidreportingstore315",
+				"type": "LinkedServiceReference"
+			},
+			"additionalLinkedServiceNames": [],
+			"headNodeSize": "",
+			"dataNodeSize": "",
+			"zookeeperNodeSize": "",
+			"clusterResourceGroupAuthType": "UserAssignedManagedIdentity",
+			"credential": {
+				"referenceName": "hdi_credential",
+				"type": "CredentialReference"
+			}
+		}
+	}
+}
