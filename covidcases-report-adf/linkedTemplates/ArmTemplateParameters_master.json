@@ -11,8 +11,20 @@
 		"ls_adls_covidreportingdl315_accountKey": {
 			"value": ""
 		},
+		"ls_hdi_covid_cluster_clusterPassword": {
+			"value": ""
+		},
+		"ls_hdi_covid_cluster_clusterSshPassword": {
+			"value": ""
+		},
 		"ls_adls_covidreportingdl315_properties_typeProperties_url": {
 			"value": "https://covidreportingdl315.dfs.core.windows.net/"
+		},
+		"ls_hdi_covid_cluster_properties_typeProperties_hostSubscriptionId": {
+			"value": "d8f009e5-60d4-48a6-bd53-725af01be7a2"
+		},
+		"ls_hdi_covid_cluster_properties_typeProperties_clusterResourceGroup": {
+			"value": "covid-resources-rg"
 		},
 		"ls_http_opendata_ecdc_europa_eu_properties_typeProperties_url": {
 			"value": "@{linkedService().sourceBaseURL}"
