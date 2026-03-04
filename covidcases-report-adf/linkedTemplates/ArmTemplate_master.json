@@ -7,6 +7,10 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "covidcases-report-adf"
 		},
+		"is_db_covid_cluster_accessToken": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accessToken' of 'is_db_covid_cluster'"
+		},
 		"ls_ablob_covidreportingstore315_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'ls_ablob_covidreportingstore315'"
@@ -69,6 +73,9 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"is_db_covid_cluster_accessToken": {
+						"value": "[parameters('is_db_covid_cluster_accessToken')]"
 					},
 					"ls_ablob_covidreportingstore315_connectionString": {
 						"value": "[parameters('ls_ablob_covidreportingstore315_connectionString')]"

@@ -5,6 +5,9 @@
 		"factoryName": {
 			"value": "covidcases-report-adf"
 		},
+		"is_db_covid_cluster_accessToken": {
+			"value": ""
+		},
 		"ls_ablob_covidreportingstore315_connectionString": {
 			"value": ""
 		},
