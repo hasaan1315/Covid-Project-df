@@ -20,6 +20,9 @@
 		"ls_hdi_covid_cluster_clusterSshPassword": {
 			"value": ""
 		},
+		"ls_sql_covid_db_password": {
+			"value": ""
+		},
 		"ls_adls_covidreportingdl315_properties_typeProperties_url": {
 			"value": "https://covidreportingdl315.dfs.core.windows.net/"
 		},
@@ -31,6 +34,15 @@
 		},
 		"ls_http_opendata_ecdc_europa_eu_properties_typeProperties_url": {
 			"value": "@{linkedService().sourceBaseURL}"
+		},
+		"ls_sql_covid_db_properties_typeProperties_server": {
+			"value": "covidreporting-srvr.database.windows.net"
+		},
+		"ls_sql_covid_db_properties_typeProperties_database": {
+			"value": "covid-dbs"
+		},
+		"ls_sql_covid_db_properties_typeProperties_userName": {
+			"value": "adm"
 		},
 		"tr_ingest_population_data_properties_typeProperties_scope": {
 			"value": "/subscriptions/d8f009e5-60d4-48a6-bd53-725af01be7a2/resourceGroups/covid-resources-rg/providers/Microsoft.Storage/storageAccounts/covidreportingstore315"
