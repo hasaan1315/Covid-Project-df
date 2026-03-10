@@ -105,7 +105,16 @@
 								"secureOutput": false,
 								"secureInput": false
 							},
-							"userProperties": [],
+							"userProperties": [
+								{
+									"name": "Source",
+									"value": "population//population_by_age.tsv.gz"
+								},
+								{
+									"name": "Destination",
+									"value": "raw/population/population_by_age_tsv"
+								}
+							],
 							"typeProperties": {
 								"source": {
 									"type": "DelimitedTextSource",
