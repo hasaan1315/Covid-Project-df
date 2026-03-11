@@ -43,9 +43,6 @@
 		},
 		"ls_sql_covid_db_properties_typeProperties_userName": {
 			"value": "adm"
-		},
-		"tr_ingest_population_data_properties_typeProperties_scope": {
-			"value": "/subscriptions/d8f009e5-60d4-48a6-bd53-725af01be7a2/resourceGroups/covid-resources-rg/providers/Microsoft.Storage/storageAccounts/covidreportingstore315"
 		}
 	}
 }

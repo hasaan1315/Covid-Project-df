@@ -59,10 +59,6 @@
 			"type": "string",
 			"defaultValue": "adm"
 		},
-		"tr_ingest_population_data_properties_typeProperties_scope": {
-			"type": "string",
-			"defaultValue": "/subscriptions/d8f009e5-60d4-48a6-bd53-725af01be7a2/resourceGroups/covid-resources-rg/providers/Microsoft.Storage/storageAccounts/covidreportingstore315"
-		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -146,34 +142,11 @@
 					},
 					"ls_hdi_covid_cluster_properties_typeProperties_clusterResourceGroup": {
 						"value": "[parameters('ls_hdi_covid_cluster_properties_typeProperties_clusterResourceGroup')]"
-					},
-					"tr_ingest_population_data_properties_typeProperties_scope": {
-						"value": "[parameters('tr_ingest_population_data_properties_typeProperties_scope')]"
 					}
 				}
 			},
 			"dependsOn": [
 				"[resourceId('Microsoft.Resources/deployments', 'covidcases-report-adf_ArmTemplate_0')]"
-			]
-		},
-		{
-			"name": "covidcases-report-adf_ArmTemplate_2",
-			"type": "Microsoft.Resources/deployments",
-			"apiVersion": "2024-03-01",
-			"properties": {
-				"mode": "incremental",
-				"templateLink": {
-					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_2.json', parameters('containerSasToken'))]",
-					"contentVersion": "1.0.0.0"
-				},
-				"parameters": {
-					"factoryName": {
-						"value": "[parameters('factoryName')]"
-					}
-				}
-			},
-			"dependsOn": [
-				"[resourceId('Microsoft.Resources/deployments', 'covidcases-report-adf_ArmTemplate_1')]"
 			]
 		}
 	]
